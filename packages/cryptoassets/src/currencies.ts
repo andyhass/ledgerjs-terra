@@ -3171,6 +3171,39 @@ const cryptocurrenciesById: Record<string, CryptoCurrency> = {
       },
     ],
   },
+  luna: {
+    type: "CryptoCurrency",
+    id: "luna",
+    coinType: 330,
+    name: "Luna",
+    managerAppName: "Terra",
+    ticker: "LUNA",
+    scheme: "luna",
+    color: "#F9D85E",
+    family: "luna",
+    units: [
+      {
+        name: "Luna",
+        code: "LUNA",
+        magnitude: 6,
+      },
+      {
+        name: "microLuna",
+        code: "uluna",
+        magnitude: 0,
+      },
+    ],
+    explorerViews: [
+      {
+        address: "https://terrasco.pe/mainnet/address/$address",
+        tx: "https://terrasco.pe/mainnet/tx/$hash",
+      },
+      {
+        address: "https://finder.terra.money/mainnet/address/$address",
+        tx: "https://finder.terra.money/mainnet/tx/$hash",
+      },
+    ],
+  },
   filecoin: {
     type: "CryptoCurrency",
     id: "filecoin",
